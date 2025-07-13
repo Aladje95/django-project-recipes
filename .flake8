@@ -1,0 +1,16 @@
+[flake8]
+ignore =
+    ; TYP001,  # ignora erros de tipagem (caso use plugins como flake8-pyi)
+    E501     
+    # ignora linhas muito longas (opcional, pode remover)
+    ; F401,  # ignora importações não utilizadas
+    ; F403,  # ignora importações de módulos inteiros
+    ; F405,  # ignora importações de atributos não utilizados
+exclude = 
+    .venv,
+    migrations,
+    __pycache__,
+    *.pyc
+
+; max-line-length = 250
+type:ignore
